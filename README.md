@@ -1,4 +1,4 @@
-This project is fork of https://github.com/yp87/leaf2mqtt and https://github.com/kamiKAC/leaf2mqtt Thank you.
+This project is fork of https://github.com/yp87/leaf2mqtt and https://github.com/kamiKAC/leaf2mqtt and https://github.com/antonhagg/leaf2mqtt Thank you.
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/derich367/leaf2mqtt) ![Docker Image Version (latest by date)](https://img.shields.io/docker/v/derich367/leaf2mqtt)
 # leaf2mqtt
