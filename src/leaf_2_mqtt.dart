@@ -199,7 +199,7 @@ void subscribeToCommands(MqttClientWrapper mqttClient, String vin) {
   subscribe('command/stats/daily', (String payload) {
     if (payload.startsWith('update')) {
       final String targetDatePart = payload.replaceAll('update', '').trim();
-      final DateTime targetDate = DateTime.tryParse(targetDatePart.toUpperCase()) ?? DateTime.now();
+      final DateTime targetDate = DateTime.tryParse(targetDatePart) ?? DateTime.now();
       fetchAndPublishDailyStats(mqttClient, vin, targetDate);
     }
   });
