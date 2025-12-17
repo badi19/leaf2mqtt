@@ -201,6 +201,7 @@ void subscribeToCommands(MqttClientWrapper mqttClient, String vin) {
       final String targetDatePart = payload.replaceAll('update', '').trim();
       final DateTime targetDate = DateTime.tryParse(targetDatePart) ?? DateTime.now();
       fetchAndPublishDailyStats(mqttClient, vin, targetDate);
+      print('[stats/daily] targetDatePart="$targetDatePart" parsed=$targetDate');
     }
   });
 
